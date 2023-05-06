@@ -5,10 +5,10 @@ $catalogoCompleto = $catalogo->traer_catalogo_completo();
 ?>
 
 <h1 class="text-center my-5 fw-bold">Nuestro Catalogo</h1>
-<div class="row d-flex flex-wrap">
+<div class="row">
     <?php if( count($catalogoCompleto) ) { ?>
         <?php foreach ($catalogoCompleto as $producto) { ?>
-        <div class="col-3">
+        <div class="col-lg-3 col-md-6 col-sm-12">
             <div class="card mb-3">
                 <img src="images/<?= $producto->portada; ?>" class="card-img-top" alt="Portada de <?= $producto->titulo; ?>">
                 <div class="card-body">

@@ -9,7 +9,7 @@ $pelicula = $catalogo->catalogo_x_categoria($categoriaSeleccionada);
 <div class="row">
     <?php if( count($pelicula) ) { ?>
         <?php foreach ($pelicula as $producto) { ?>
-            <div class="col-3">
+            <div class="col-lg-3 col-md-6 col-sm-12">
             <div class="card mb-3">
                 <img src="images/<?= $producto->portada; ?>" class="card-img-top" alt="Portada de <?= $producto->titulo; ?>">
                 <div class="card-body">
